@@ -426,7 +426,7 @@ class HomeWizardClimateEntity(ClimateEntity):
         elif self._isDEHUMID:
             self._device_web_socket.set_mode(preset_mode)
         else:
-            raise NotImplementedError()
+            return None
 
     def turn_aux_heat_on(self) -> None:
         """Not implemented."""
